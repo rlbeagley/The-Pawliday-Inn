@@ -97,3 +97,17 @@ h2 {
 .form-label {
   font-weight: bold;
 }
+
+.paw {
+  opacity: 0;
+  animation: popIn 0.4s ease forwards;
+}
+
+.paw:nth-child(1) { animation-delay: 1s; }
+.paw:nth-child(2) { animation-delay: 2s; }
+
+@keyframes popIn {
+  0%   { opacity: 0; transform: scale(0); }
+  70%  { transform: scale(1.2); }
+  100% { opacity: 1; transform: scale(1); }
+}

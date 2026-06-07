@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { DateRange } from 'react-date-range';
 import { Button, Container, Row, Col, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import { enCA } from 'date-fns/locale';
+import pawImg from '../assets/paw.svg';
 
 export default function Booking({ onNext }) {
   // to determine which booking step is shown...
@@ -112,7 +114,16 @@ export default function Booking({ onNext }) {
   } 
   
   else if (step === 3) {
-      return(<h2>STAGE 3</h2>);
+      return(
+        <Container className="d-flex flex-column justify-content-center align-items-center" style={{ minHeight: '100vh', position: 'relative' }}>
+          <img src={pawImg} className="paw" style={{position: 'absolute', rotate: '-40deg', top: '0%', right: '0%'}} alt="paw svg" />
+          <h1>Booking Confirmed!</h1>
+          <h2>We look forward to seeing your furry friend soon.</h2>
+          <Button as={Link} to="/" className="mx-2">Return to Home</Button>
+          <img src={pawImg} className="paw" style={{position: 'absolute', bottom: '10%', left: '0%',}} alt="paw svg" />
+          
+        </Container>
+      );
 
   }
   
