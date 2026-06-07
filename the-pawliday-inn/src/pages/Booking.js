@@ -22,7 +22,7 @@ export default function Booking({ onNext }) {
       <Container className="d-flex flex-column justify-content-center align-items-center" style={{ minHeight: '100vh', paddingTop: '60px' }}>
         <Row className="align-items-center justify-content-between w-100">
           <Col md={5} className="pl-3">
-            <h1 style={{fontSize: '5em'}}>Please Select <span style={{color: 'black', textDecoration: 'underline'}}>Check-In</span> and <span  style={{color: 'black', textDecoration: 'underline'}}>Check-Out</span> Dates:</h1>
+            <h1 className="font-weight-bold" style={{fontSize: '4.5em'}}>Please Select <span style={{color: 'black'}}>Check-In</span> and <span  style={{color: 'black'}}>Check-Out</span> Dates:</h1>
           </Col>
           <Col md="auto">
             <DateRange

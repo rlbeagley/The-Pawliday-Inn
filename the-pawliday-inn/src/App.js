@@ -5,8 +5,7 @@ import Home from './pages/Home.js';
 import About from './pages/About.js';
 import Booking from './pages/Booking.js';
 import Services from './pages/Services.js';
-import CustomNavbar from './components/Navbar.js'
-
+import CustomNavbar from './components/Navbar.js';
 
 function App() {
   return (
