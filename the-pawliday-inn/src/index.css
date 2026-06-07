@@ -30,7 +30,7 @@ src: url('./fonts/Chunky\ Playful.otf') format('opentype');
 
 h1 {
   font-family: 'ChunkyPlayful';
-  font-size: 6.5rem;
+  font-size: 6.5em;
   color: #0259DE;
   text-shadow: 2px 2px 0px black;
 }
@@ -48,7 +48,7 @@ h2 {
   border: none;
   color: #FFE1D7;
   padding: 1rem ;
-  border-radius: 20px;
+  border-radius: 20px; 
   font-size: 1.4em;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
@@ -69,4 +69,31 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: black;
+}
+
+.rdrCalendarWrapper {
+    background-color: white !important;
+    border-radius: 20px !important;
+    font-size: 1em;
+}
+
+.rdrDay .rdrDayDisabled {
+  background-color: #84B0FB;
+}
+
+.rdrDateDisplayWrapper, .rdrNextPrevButton, .rdrNextButton {
+  background-color: #84B0FB;
+}
+
+.rdrDateDisplayWrapper {
+  border-radius: 20px !important;
+  background-color: #0259DE;
+}
+
+.custom-btn {
+  margin-left: 1em;
+}
+
+.form-label {
+  font-weight: bold;
 }
